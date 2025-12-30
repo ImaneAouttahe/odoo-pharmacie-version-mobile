@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pharmacie_search_page_final"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_gradient"
+    tools:context=".MainActivity">
+
+    <!-- Titre principal -->
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/glass_card_bg"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp"
+        android:text="💊 Trouvez une pharmacie"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Ligne 1 : sélection mode et ville -->
+    <LinearLayout
+        android:id="@+id/pharmacy_filter_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="@drawable/glass_card_bg"
+        android:elevation="6dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- Mode select -->
+        <Spinner
+            android:id="@+id/mode_select_final"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+        <!-- City select -->
+        <Spinner
+            android:id="@+id/city_select_final"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+
+    <!-- Ligne 2 : champ recherche -->
+    <LinearLayout
+        android:id="@+id/pharmacy_filter_row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="@drawable/glass_card_bg"
+        android:elevation="6dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- Input search -->
+        <EditText
+            android:id="@+id/search_input_final"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint="Nom ou adresse"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Bouton recherche -->
+        <Button
+            android:id="@+id/btn_search_manual_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Bouton géolocalisation -->
+        <Button
+            android:id="@+id/btn_geolocation_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍"/>
+    </LinearLayout>
+
+    <!-- RecyclerView pour les résultats -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pharmacy_results_final"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"/>
+</LinearLayout>

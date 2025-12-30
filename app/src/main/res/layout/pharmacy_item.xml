@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/glass_card_bg"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Nom de la pharmacie -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/pharmacy"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:id="@+id/pharmacy_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Adresse -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/placeholder"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:id="@+id/pharmacy_address"
+            android:layout_marginStart="6dp"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Distance (affichée seulement si disponible) -->
+    <LinearLayout
+        android:id="@+id/distance_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/road" />
+
+        <TextView
+            android:id="@+id/pharmacy_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- Bouton Google Maps -->
+    <Button
+        android:id="@+id/btn_open_map"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Afficher Trajet"
+        android:textColor="@android:color/white" />
+
+    <!-- Nouveau bouton Voir Médicaments -->
+    <Button
+        android:id="@+id/btn_view_medicaments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Voir Médicaments 💊"
+        android:textColor="@android:color/white" />
+</LinearLayout>

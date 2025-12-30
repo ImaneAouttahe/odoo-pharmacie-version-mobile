@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Gradient principal -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#667EEA"
+                android:centerColor="#764BA2"
+                android:endColor="#F093FB"
+                android:angle="135"/>
+        </shape>
+    </item>
+
+    <!-- Effet radial similaire à Odoo -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <gradient
+                android:type="radial"
+                android:centerX="0.2"
+                android:centerY="0.3"
+                android:gradientRadius="500dp"
+                android:startColor="#4C7AFF33"
+            android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <gradient
+                android:type="radial"
+                android:centerX="0.8"
+                android:centerY="0.7"
+                android:gradientRadius="500dp"
+                android:startColor="#F093FB33"
+            android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+
+</layer-list>

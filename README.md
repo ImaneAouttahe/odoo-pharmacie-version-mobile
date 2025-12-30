@@ -1,0 +1,1 @@
+"# odoo-pharmacie-version-mobile" 
