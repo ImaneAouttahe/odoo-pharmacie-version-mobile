@@ -54,7 +54,8 @@ Pour que l’application fonctionne correctement, il est nécessaire de :
 
 ✔️ Autoriser le trafic HTTP (cleartext)
 
-🛠️ Configuration requise 1️⃣ Modifier l’adresse IP dans MainActivity.java
+🛠️ Configuration requise 
+1️⃣ Modifier l’adresse IP dans MainActivity.java
 
 Remplacer l’adresse IP par celle de votre PC :
 
@@ -69,6 +70,7 @@ ipconfig
 Dans le fichier /res/xml/network_security_config.xml, remplacer également l’adresse IP :
 
 192.168.1.40
+
 ⚠️ Cette configuration est nécessaire pour autoriser les communications HTTP entre l’application Android et le serveur Odoo.
 
 ✅ Résumé
